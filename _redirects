@@ -1,0 +1,8 @@
+# Rewrite a path
+/*    /index.html   200
+
+# Redirect default Netlify subdomain to primary domain with SSL
+https://loansbytresa.netlify.com/* https://www.loansbytresa.com/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain without SSL
+http://loansbytresa.netlify.com/* https://www.loansbytresa.com/:splat 301!
