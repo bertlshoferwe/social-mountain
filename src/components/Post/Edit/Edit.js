@@ -19,7 +19,13 @@ export default class Edit extends Component {
     this.setState({ text: value });
   }
 
-  updatePost() {
+  updatePost( ) {
+
+    const { text } = this.state;
+  const { id, updatePost, hideEdit } = this.props;
+
+  updatePost( id, text );
+  hideEdit();
 
   }
 
@@ -36,7 +42,7 @@ export default class Edit extends Component {
 
         <div className="Edit__controls">
           {/* This saves your changes made */}
-          <button id="Edit__controls-update" 
+          <button id="Edit__controls-update"
                   className="Edit__control-btn"
                   onClick={ this.updatePost }>
             Update
